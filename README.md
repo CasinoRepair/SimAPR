@@ -55,7 +55,7 @@ Plus, you should install the following to utilize GPU for learning-based tools.
 Then, pull the docker image and start the docker.
 ```
 docker pull casinorepair/simapr:1.2
-docker run -it --gpus all --name simapr --workdir /root/projects/simapr casinorepair/simapr:1.1 /bin/bash
+docker run -it --gpus all --name simapr --workdir /root/projects/simapr casinorepair/simapr:1.2 /bin/bash
 ```
 
 ## How to Add and Run a New Patch Scheduling Algorithm
