@@ -3,7 +3,7 @@ import sys
 import d4j_fixminer
 import subprocess
 import multiprocessing as mp
-import seeds
+
 
 def run(project,mode,seed):
     cur_dir=os.getcwd()

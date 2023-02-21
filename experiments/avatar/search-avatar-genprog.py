@@ -1,14 +1,14 @@
 import d4j_avatar
 import subprocess
 import multiprocessing as mp
-import seeds
+
 
 import os
 import sys
 import d4j_avatar
 import subprocess
 import multiprocessing as mp
-import seeds
+
 
 def run(project,seed):
     cur_dir=os.getcwd()

@@ -2,7 +2,6 @@ import os
 import sys
 import subprocess
 import multiprocessing as mp
-import seeds
 
 def run(project,mode,seed):
     if "_" in project:

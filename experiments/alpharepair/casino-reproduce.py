@@ -1,6 +1,5 @@
 import subprocess
 import getopt
-import seeds
 
 
 def execute_cmd(cmd: list) -> int:

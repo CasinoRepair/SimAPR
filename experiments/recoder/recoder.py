@@ -1,6 +1,5 @@
 import subprocess
 import getopt
-import seeds
 import sys
 import os
 
@@ -21,4 +20,4 @@ def main(argv):
     execute_cmd(cmd)
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    main(sys.argv)
