@@ -83,7 +83,7 @@ class MSV:
       start_time=time.time()
       (pass_result, fail_tests) = run_test.run_pass_test(self.state, selected_patch, False)
       pass_time=time.time()-start_time
-      if self.state.mode==MSVMode.guided and not self.state.use_condition_synthesis and not self.state.use_simulation_mode:
+      if self.state.mode==MSVMode.casino and not self.state.use_condition_synthesis and not self.state.use_simulation_mode:
         if pass_result:
           result_handler.update_result_positive(self.state, selected_patch, pass_result, fail_tests)
           result_handler.append_result(self.state, selected_patch, True,pass_result, True,True,fail_time,pass_time)
@@ -231,7 +231,7 @@ class MSV:
             continue
 
         # Our guided condition synthesis
-        if self.state.mode==MSVMode.guided and self.state.iteration >= self.state.max_initial_trial:
+        if self.state.mode==MSVMode.casino and self.state.iteration >= self.state.max_initial_trial:
           self.state.msv_logger.info('Run path guide condition synthesis')
           # new_patch=PatchInfo(patch[0].case_info,None,None,None)
           new_patch=patch[0]

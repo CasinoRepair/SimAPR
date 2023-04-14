@@ -15,7 +15,7 @@ import uuid
 import math
 class MSVMode(Enum):
   prophet = 1
-  guided = 2
+  casino = 2
   random = 3
   original = 4
   positive = 5
@@ -1669,7 +1669,7 @@ class MSVState:
   bounded_seapr: bool
   def __init__(self) -> None:
     self.msv_version = "1.0.0"
-    self.mode = MSVMode.guided
+    self.mode = MSVMode.casino
     self.msv_path = ""
     self.msv_uuid = str(uuid.uuid4())
     self.cycle = 0

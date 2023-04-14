@@ -26,7 +26,7 @@ $ python3 simapr.py -o <output_dir> -w <path_to_inputs> -m <mode> -t <single-tes
 * `-w <path_to_inputs>`: directory to input json file and patched sources (`--workdir`)
 * `-t <millisecond>`: timeout for single test (`--timeout`)
 * `-m <mode>`: mode (`--mode`)
-  * guided, seapr, genprog
+  * casino, seapr, genprog
   * recoder, tbar, fixminer : these are option when using original tool's algorithm.
 * `-E <iteration>`: iteration limit (`--cycle-limit`)
 * `-T <second>`: time limit (`--time-limit`)
@@ -48,7 +48,7 @@ To add a new scheduling algorithm, extend the `MSVMode` class in [core.py](./cor
 
 ```
 class MSVMode(Enum):
-  guided = 2
+  casino = 2
   random = 3
   original = 4
   seapr = 8
